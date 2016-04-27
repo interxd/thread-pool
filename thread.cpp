@@ -26,7 +26,6 @@ void add_func(int a, int b)
 
 int main()
 {	
-
 	pthread_t ptids[5];
 	for (int i = 0; i < 5; ++i)
 	{
