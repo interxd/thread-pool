@@ -36,13 +36,6 @@ public:
         return front;  
     }  
   
-    size_t size() const  
-    {  
-        pthread_mutex_lock(&mutex_);
-        return queue_.size();  
-        pthread_mutex_unlock(&mutex_);
-    }  
-  
 private:  
     BlockingQueue (const BlockingQueue& rhs);  
     BlockingQueue& operator = (const BlockingQueue& rhs);  
